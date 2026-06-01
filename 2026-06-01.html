@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safe Harbour — What’s On in Cork</title>
+  <meta name="description" content="What’s on in Cork this week.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* ── BRAND IDENTITY ─────────────────────────────────── */
+      --accent:           #B85A54;
+      --accent-hover:     #9E4440;
+      --accent-light:     #E0B4B0;
+
+      /* ── INK & GROUND ───────────────────────────────────── */
+      --dark:             #262728;
+      --base:             #F6F3F2;
+
+      /* ── FULL TEXT SCALE ─────────────────────────────────── */
+      --body-text:        #262728;
+      --body-muted:       #484848;
+      --body-subtle:      #808080;
+      --divider:          rgba(38,39,40,0.10);
+
+      /* ── NEUTRAL ─────────────────────────────────────────── */
+      --neutral:          #787070;
+
+      /* ── CARD SURFACES ───────────────────────────────────── */
+      --card-bg:          #FDFBFA;
+      --card-tint:        #F8EEEC;
+      --card-border:      rgba(30,30,30,0.07);
+
+      /* ── ACCENT TINT SCALE ───────────────────────────────── */
+      --tint-strong:      #D49C98;
+      --tint-mid:         #E5BAB8;
+      --tint-soft:        #F2D8D6;
+
+      /* ── FOOTER ─────────────────────────────────────────── */
+      --footer-bg:        #1A1B1C;
+      --footer-text:      #C0BABA;
+      --footer-muted:     #606060;
+
+      /* ── TYPOGRAPHY ─────────────────────────────────────── */
+      --font-display: 'Clash Display', system-ui, sans-serif;
+      --font: 'DM Sans', system-ui, sans-serif;
+
+      /* ── RADII & SHADOWS ─────────────────────────────────── */
+      --r-sm: 8px; --r-md: 12px; --r-lg: 16px;
+      --sh-sm: 0 2px 10px rgba(0,0,0,0.06);
+      --sh-md: 0 6px 24px rgba(0,0,0,0.12);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font); background: var(--base); color: var(--dark); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    .hero-title, .hero-kicker, h1, h2, .section-heading { font-family: var(--font-display); }
+    .hero { position: relative; min-height: 500px; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; background: url('hero.jpg') center 40% / cover no-repeat; }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(8,6,4,0.10) 0%, rgba(8,6,4,0.30) 35%, rgba(8,6,4,0.76) 100%); }
+    .hero-inner { position: relative; z-index: 2; max-width: 860px; margin: 0 auto; width: 100%; padding: 48px 32px 60px; }
+    .hero-tag { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.12); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.18); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; padding: 6px 14px; border-radius: 100px; margin-bottom: 22px; }
+    .hero-dot { width: 5px; height: 5px; background: #F8D4C0; border-radius: 50%; animation: pulse 2.2s ease-in-out infinite; }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.4;transform:scale(0.75);} }
+    .hero-title { font-size: clamp(52px, 10vw, 88px); font-weight: 800; letter-spacing: -1.5px; text-transform: uppercase; color: #fff; line-height: 0.92; margin-bottom: 22px; }
+    .hero-title span { display: block; color: rgba(255,255,255,0.75); font-size: 0.52em; font-weight: 400; letter-spacing: 0; text-transform: none; line-height: 1.5; margin-top: 14px; }
+    .hero-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: var(--dark); font-family: var(--font); font-size: 14px; font-weight: 700; text-decoration: none; padding: 13px 22px; border-radius: var(--r-sm); transition: background 0.15s, transform 0.1s; white-space: nowrap; }
+    .btn-primary:hover { background: var(--accent-light); transform: translateY(-1px); }
+    .btn-ghost { display: inline-flex; align-items: center; gap: 6px; color: rgba(255,255,255,0.82); font-size: 14px; font-weight: 500; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 2px; transition: color 0.15s, border-color 0.15s; }
+    .btn-ghost:hover { color: #fff; border-color: #fff; }
+    .count-strip { background: var(--dark); padding: 16px 32px; }
+    .count-inner { max-width: 860px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: nowrap; }
+    .count-item { display: flex; align-items: baseline; gap: 7px; }
+    .count-item strong { font-size: 20px; font-weight: 800; color: var(--accent); }
+    .count-item span { font-size: 12px; color: rgba(255,255,255,0.45); }
+    .count-sep { width: 1px; height: 20px; background: rgba(255,255,255,0.10); flex-shrink: 0; }
+    .main { max-width: 860px; margin: 0 auto; padding: 56px 32px 80px; }
+    .cat-section { margin-bottom: 56px; animation: fadeUp 0.45s ease both; }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);} }
+    .cat-section:nth-child(1){animation-delay:0.05s;} .cat-section:nth-child(2){animation-delay:0.10s;} .cat-section:nth-child(3){animation-delay:0.15s;} .cat-section:nth-child(4){animation-delay:0.20s;} .cat-section:nth-child(5){animation-delay:0.25s;} .cat-section:nth-child(6){animation-delay:0.30s;}
+    .cat-strip { background: linear-gradient(105deg, var(--dark) 0%, var(--accent) 100%); border-radius: var(--r-lg) var(--r-lg) 0 0; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .cat-strip-left { display: flex; align-items: center; gap: 12px; }
+    .cat-bar { width: 3px; height: 26px; background: rgba(255,255,255,0.7); border-radius: 2px; flex-shrink: 0; }
+    .cat-name { font-size: 17px; font-weight: 800; text-transform: uppercase; letter-spacing: -0.2px; color: #fff; }
+    .cat-count { font-size: 11px; font-weight: 700; color: #fff; background: rgba(0,0,0,0.35); padding: 3px 10px; border-radius: 100px; border: 1px solid rgba(255,255,255,0.15); }
+    .cat-cards { border: 1px solid var(--card-border); border-top: none; border-radius: 0 0 var(--r-lg) var(--r-lg); overflow: hidden; }
+    .event-card { display: grid; grid-template-columns: 1fr auto; gap: 10px 18px; align-items: center; background: var(--card-bg); padding: 18px 22px; text-decoration: none; color: inherit; border-bottom: 1px solid var(--card-border); position: relative; transition: background 0.15s; }
+    .event-card:last-child { border-bottom: none; }
+    .event-card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--accent); opacity: 0; transition: opacity 0.15s; }
+    .event-card:hover { background: #F0F0F0; }
+    .event-card:hover::before { opacity: 1; }
+    .event-card.tint { background: var(--card-tint); }
+    .event-card.tint:hover { background: #E8E8E8; }
+    .event-main { min-width: 0; }
+    .event-title { font-size: 15px; font-weight: 600; color: var(--dark); line-height: 1.3; margin-bottom: 7px; }
+    .event-meta { display: flex; flex-wrap: wrap; gap: 5px 14px; }
+    .meta-chip { display: flex; align-items: center; gap: 5px; font-size: 13px; color: var(--neutral); }
+    .meta-chip svg { opacity: 0.6; flex-shrink: 0; }
+    .event-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; flex-shrink: 0; }
+    .badge-price { font-size: 12px; font-weight: 600; color: var(--neutral); background: transparent; border: 1.5px solid rgba(155,147,134,0.5); padding: 2px 9px; border-radius: 100px; white-space: nowrap; }
+    .badge-free { font-size: 12px; font-weight: 700; color: #1A6634; background: transparent; border: 1.5px solid #1A6634; padding: 2px 9px; border-radius: 100px; white-space: nowrap; }
+    .badge-plain { font-size: 12px; font-weight: 600; color: var(--neutral); background: transparent; border: 1.5px solid rgba(155,147,134,0.5); padding: 2px 9px; border-radius: 100px; white-space: nowrap; }
+    .more-link { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; color: var(--dark); text-decoration: none; white-space: nowrap; transition: gap 0.15s; opacity: 0.6; }
+    .more-link:hover { gap: 7px; }
+    .site-footer { background: var(--footer-bg); position: relative; overflow: hidden; }
+    .site-footer::before { content: ''; position: absolute; top: -120px; left: -100px; width: 480px; height: 480px; background: radial-gradient(circle, rgba(184,90,84,0.10) 0%, transparent 65%); pointer-events: none; }
+    .site-footer::after { content: ''; position: absolute; bottom: -80px; right: -80px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(184,90,84,0.06) 0%, transparent 65%); pointer-events: none; }
+    .footer-inner { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 64px 32px 40px; }
+    .footer-top { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.07); margin-bottom: 28px; }
+    .footer-brand { font-size: 36px; font-weight: 800; text-transform: uppercase; letter-spacing: -0.5px; color: #fff; line-height: 0.95; margin-bottom: 14px; }
+    .footer-tagline { font-size: 14px; color: var(--footer-text); line-height: 1.65; max-width: 250px; margin-bottom: 26px; }
+    .footer-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--accent-light); color: var(--dark); font-size: 14px; font-weight: 700; text-decoration: none; padding: 12px 22px; border-radius: var(--r-sm); transition: background 0.15s, color 0.15s, transform 0.1s; }
+    .footer-btn:hover { background: var(--accent); color: #fff; transform: translateY(-1px); }
+    .footer-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-content: start; }
+    .stat-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); border-radius: var(--r-md); padding: 18px 16px; }
+    .stat-num { font-size: 30px; font-weight: 800; color: var(--accent); line-height: 1; margin-bottom: 5px; }
+    .stat-label { font-size: 12px; color: var(--footer-text); }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .footer-copy { font-size: 12px; color: var(--footer-muted); }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { font-size: 12px; color: var(--footer-muted); text-decoration: none; transition: color 0.15s; }
+    .footer-links a:hover { color: var(--footer-text); }
+    @media (max-width: 600px) { .hero-inner { padding: 28px 20px 44px; } .hero-title { font-size: 48px; } .main { padding: 40px 20px 60px; } .event-card { grid-template-columns: 1fr; } .event-actions { flex-direction: row; justify-content: space-between; align-items: center; } .footer-top { grid-template-columns: 1fr; gap: 32px; } .footer-inner { padding: 48px 20px 32px; } .count-strip { padding: 12px 16px; } .count-inner { gap: 12px; } .count-item strong { font-size: 16px; } .count-item span { font-size: 10px; } .count-sep { height: 16px; } }
+  </style>
+</head>
+<body>
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <div class="hero-tag"><span class="hero-dot"></span>Cork  ·  Updated weekly</div>
+    <h1 class="hero-title">Safe<br>Harbour<span>What's On &nbsp;·&nbsp; 1 Jun – 7 Jun 2026</span></h1>
+    <div class="hero-actions">
+      <a href="https://www.safeharbour.ie" class="btn-primary"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Subscribe — it's free</a>
+      <a href="https://www.safeharbour.ie/archive" class="btn-ghost">Read the newsletter<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+    </div>
+  </div>
+</section>
+<div class="count-strip">
+  <div class="count-inner">
+    <div class="count-item"><strong style="font-size:28px">64</strong><span style="font-size:16px">events this week</span></div>
+  </div>
+</div>
+<main class="main">
+<div class="cat-section">
+  <div class="cat-strip">
+    <div class="cat-strip-left">
+      <div class="cat-bar"></div>
+      <span class="cat-name">Live Music</span>
+    </div>
+    <span class="cat-count">31 events</span>
+  </div>
+  <div class="cat-cards">
+    <a href="https://www.purecork.ie/whats-on/11198377/jimmy-lee-dwyers-of-cork-28-washington-st-02-jun-2026-9pm" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Jimmy Lee</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Tue 2 Jun, 21:30
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Dwyers of Cork, 27-28 Washington St, Cork, T12 WC93
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.eventbrite.ie/e/abigail-williams-tickets-1986163687054" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Abigail Williams</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Wed 3 Jun, 19:30
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          The Pavillion
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.peoplesrepublicofcork.com/eventguide/andrew-whelton-11198380" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Andrew Whelton</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Wed 3 Jun, 21:30
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Dwyers of Cork, 27-28 Washington St, Cork, T12 WC93
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.purecork.ie/whats-on/11190365/fireside-folk-the-welcome-inn-parnell-place-03-jun-2026-9pm" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Fireside Folk</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Wed 3 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          The Welcome Inn, Cork City, Ireland
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.corkoperahouse.ie/whats-on/mary-black-slan/" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Mary Black – The Slán Tour</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Wed 3 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cork Opera House
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.kinsale.ie/event/tides-of-tradition/2026-06-03/" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Tides Of Tradition</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Wed 3 Jun, 19:30
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Kinsale, Co. Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.cyprusavenue.ie/gigs/115-jazz-jam-sessions-11195612" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">115 Jazz Jam Sessions</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Thu 4 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cyprus Avenue, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.thewelcomeinncork.com/index.php?page=whats-on&amp;id=11190424" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Ballads and Banjos</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Thu 4 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          The Welcome Inn, Cork City, Ireland
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.eventbrite.ie/e/rave-for-roofs-tickets-1987061259718" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Rave For Roofs</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Thu 4 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Sky Bar Cork, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.coughlans.ie/whats-on/the-drive-11196005" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">the drive.</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Thu 4 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Coughlan's Bar &amp; Live Music Venue, Cork, Ireland
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.thewelcomeinncork.com/index.php?page=whats-on&amp;id=11191393" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Cathal Fitz</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Fri 5 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          The Welcome Inn, Cork City, Ireland
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://leviscornerhouse.com/events/dirk-amelia-powell-2/" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Dirk &amp; Amelia Powell</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Fri 5 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Levis Corner House, Main Street, Ballydehob, Co.Cork, Ireland
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.cyprusavenue.ie/gigs/evil-scientist-and-waveflyer-and-eve-whelan-11198512" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Evil Scientist and Waveflyer and Eve Whelan</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Fri 5 Jun, 19:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cyprus Avenue, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://dwyersofcork.ie/" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Up To 90</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Fri 5 Jun, 22:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Dwyers of Cork, 27-28 Washington St, Cork, T12 WC93
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://triskelartscentre.ie/events/amanda-shires/" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Amanda Shires Streetlights and Stars European Tour</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Triskel Arts Centre, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.eventbrite.ie/e/club-30-tickets-1984543574253?aff=oddtdtcreator" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Club 30 - An Over 30s Evening Club!</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 18:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cyprus Avenue, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.purecork.ie/whats-on/11197908/cruise-ship-sessions" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Cruise Ship Sessions</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          The Welcome Inn, Cork City, Ireland
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.theoldmoderns.com/" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Old Moderns</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 22:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Dwyers of Cork, 27-28 Washington St, Cork, T12 WC93
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://connollysofleap.com/ticket/rioghnach-connolly-honeyfeet-saturday-6th-june-2026/" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Ríoghnach Connolly &amp; Honeyfeet</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Connolly's Of Leap
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.eventbrite.ie/e/rock-the-block-2026-tickets-1990088994755" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Rock the Block 2026</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, Afternoon/Evening
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cork City Library, Carnegie Courtyard
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.cyprusavenue.ie/gigs/silent-disco-11196454" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Silent Disco Wavelength</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 23:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cyprus Avenue, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.purecork.ie/whats-on/11190467/tony-roberts" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Tony Roberts</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          The Welcome Inn, Cork City, Ireland
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.purecork.ie/whats-on/11195961/woah-mama" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Woah! Mama!</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Coughlan's Bar &amp; Live Music Venue, Cork, Ireland
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://connollysofleap.com/ticket/c-w-stoneking-sunday-7th-june/" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">C.W. Stoneking</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sun 7 Jun, 21:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Connolly's Of Leap
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.purecork.ie/whats-on/11198151/cathal-fitz-dwyers-of-cork-28-washington-st-07-jun-2026-9pm" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Cathal Fitz</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sun 7 Jun, 21:30
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Dwyers of Cork, 27-28 Washington St, Cork, T12 WC93
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://leviscornerhouse.com/events/dogtail-soup-trio-2/" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">DOGTAIL SOUP TRIO</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sun 7 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Levis Corner House, Main Street, Ballydehob, Co.Cork, Ireland
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://dwyersofcork.ie/" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Rob O' Shea</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sun 7 Jun, 19:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Dwyers of Cork, 27-28 Washington St, Cork, T12 WC93
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.purecork.ie/whats-on/11197916/trevor-osbourne" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Trevor Osbourne</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sun 7 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          The Welcome Inn, Cork City, Ireland
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.eventbrite.ie/e/alex-ubago-cork-tickets-1978176976588?aff=oddtdtcreator" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Alex Ubago</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Mon 8 Jun, 19:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cyprus Avenue, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.purecork.ie/whats-on/11196115/" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Ricky Kelleher</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Mon 8 Jun, 21:30
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Dwyers of Cork, 27-28 Washington St, Cork, T12 WC93
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.coughlans.ie/whats-on/trad-session-11195026" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Trad Session</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Mon 8 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Coughlan's Bar &amp; Live Music Venue, Cork, Ireland
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="cat-section">
+  <div class="cat-strip">
+    <div class="cat-strip-left">
+      <div class="cat-bar"></div>
+      <span class="cat-name">Arts &amp; Culture</span>
+    </div>
+    <span class="cat-count">19 events</span>
+  </div>
+  <div class="cat-cards">
+    <a href="https://whatsontonight.ie/event/41177/" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Comedy Cavern: Open Mic with Thomas Lawrance</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Tue 2 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Coughlan's Bar &amp; Live Music Venue, Cork, Ireland
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://corkartstheatre.com/event/god-of-carnage/" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">God of Carnage</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Wed 3 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cork Arts Theatre, Carroll's Quay, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://brierygap.ticketsolve.com/ticketbooth/shows/1173680836" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">IFI@BrieryGap | Akira (4K Restoration)</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Wed 3 Jun, 19:30
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Briery Gap, Main Street, Macroom, Cork, Ireland
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://brierygap.ticketsolve.com/ticketbooth/shows/1173680891" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Cinema | The Amazing Digital Circus: The Last Act</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Thu 4 Jun, 18:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Briery Gap, Main Street, Macroom, Cork, Ireland
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://triskelartscentre.ie/events/a-brief-history-of-song/" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">A Brief History of Song Cork PianoFest 2026</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Fri 5 Jun, 13:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Triskel Arts Centre, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://everymancork.com/events/cruinniu-na-nog-behind-the-scenes-tour-at-the-everyman/" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Behind the Scenes Tour</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 14:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          The Everyman, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://brierygap.ticketsolve.com/ticketbooth/shows/1173680891" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Cinema | The Amazing Digital Circus: The Last Act</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 18:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Briery Gap, Main Street, Macroom, Cork, Ireland
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.corkcoco.ie/en/news/cork-county-council-announces-cross-border-creative-showcase-with-cork-county-comhairle-na-nog" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Cross-Border Youth Showcase (Cruinniú na nÓg)</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 19:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cork County Hall, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.corkcity.ie/en/cruinniu-na-nog/event-details/music-production-with-stevie-g/" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Music Production with Stevie G</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 12:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Triskel Christchurch
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.corkoperahouse.ie/whats-on/norma-bellini/" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Norma – Bellini</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cork Opera House
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.corkcity.ie/en/cruinniu-na-nog/event-details/photography-with-chris-finnegan/" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Photography with Chris Finnegan</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 10:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Triskel Sample Project Space
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.corkcity.ie/en/cruinniu-na-nog/event-details/print-with-aoife-claffey/" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Print with Aoife Claffey</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 16:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Triskel Sample Project Space
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.corkcity.ie/en/cruinniu-na-nog/event-details/textiles-with-sarah-buckley/" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Textiles with Sarah Buckley</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 14:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Triskel Christchurch
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://triskelartscentre.ie/events/fairlyland/" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Fairyland</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sun 7 Jun, 14:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Triskel Cinema, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.corkoperahouse.ie/whats-on/stewart-lee-vs-the-man-wulf/" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Stewart Lee vs The Man-Wulf</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sun 7 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cork Opera House
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://triskelartscentre.ie/events/the-christophers/" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">The Christophers</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sun 7 Jun, 16:20
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Triskel Cinema, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://corkartstheatre.com/event/constellations/" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Constellations</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Mon 8 Jun, 20:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cork Arts Theatre, Carroll's Quay, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://brierygap.ticketsolve.com/ticketbooth/shows/1173681066" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">IFI@BrieryGap | The Wizard of the Kremlin</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Mon 8 Jun, 19:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Briery Gap, Main Street, Macroom, Cork, Ireland
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.meetup.com/rebel-city-drama-club/events/314541550/?eventOrigin=city_events_this_weekend" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Rebel City Drama Club - Monday meet-up</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Mon 8 Jun, 19:30
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="cat-section">
+  <div class="cat-strip">
+    <div class="cat-strip-left">
+      <div class="cat-bar"></div>
+      <span class="cat-name">Family Friendly</span>
+    </div>
+    <span class="cat-count">6 events</span>
+  </div>
+  <div class="cat-cards">
+    <a href="https://www.facebook.com/corkharbourfestival/posts/cork-harbour-festival-2026-is-officially-launched-and-this-years-programme-is-ou/1597888355084653/" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Blackrock Race Day (Cork Harbour Festival)</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, All day
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Blackrock Village waterfront
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.corkcity.ie/en/cork-carnival-of-science/" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Cork Carnival of Science – Day 1</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 10:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Fitzgerald Park
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://triskelartscentre.ie/events/creative-workshops-for-cruinniu-na-nog/" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Creative Workshops for Cruinniú na nÓg</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 10:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Triskel Arts Centre, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.corkoperahouse.ie/whats-on/cruinniu-na-nog-2026/" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Cruinniú na nÓg – Puppet-Making Workshop</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 10:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cork Opera House
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://everymancork.com/events/cruinniu-na-nog-behind-the-scenes-tour-at-the-everyman/" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Cruinniú na nÓg 2026: Behind the Scenes Tour at The Everyman</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 00:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          The Everyman, 15 Maccurtain street, Cork, T23 E094
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.corkcity.ie/en/cork-carnival-of-science/" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Cork Carnival of Science – Day 2</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sun 7 Jun, 10:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Fitzgerald Park
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="cat-section">
+  <div class="cat-strip">
+    <div class="cat-strip-left">
+      <div class="cat-bar"></div>
+      <span class="cat-name">Other</span>
+    </div>
+    <span class="cat-count">3 events</span>
+  </div>
+  <div class="cat-cards">
+    <a href="https://www.meetup.com/bewelcome-language-exchange/events/314771996/?eventOrigin=city_events_this_weekend" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Be welcome language exchange</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Tue 2 Jun, 18:30
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.meetup.com/bewelcome-language-exchange/events/314805665/?eventOrigin=city_events_this_weekend" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">BeWelcome, Language Exchange In Cork</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Thu 4 Jun, 18:30
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.meetup.com/meetup-group-iqwhnzmq/events/314694143/?eventOrigin=city_events_this_weekend" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Spanish ↔️ English Language Exchange Meet Up</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 10:30
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="cat-section">
+  <div class="cat-strip">
+    <div class="cat-strip-left">
+      <div class="cat-bar"></div>
+      <span class="cat-name">Outdoor &amp; Wellness</span>
+    </div>
+    <span class="cat-count">3 events</span>
+  </div>
+  <div class="cat-cards">
+    <a href="https://www.eventbrite.ie/e/otter-walk-and-2minutebeachclean-in-ballincollig-tickets-1987121505916" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Cork City Otter Walk</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Wed 3 Jun, 19:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://corkharbourfestival.com/events/come-try-kayaking/" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Come &amp; Try Kayaking Session (Cork Harbour Festival)</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Fri 5 Jun, 18:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Phoenix Kayak Club, Lee Road
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://corkharbourfestival.com/events/beach-yoga-pilates-fountainstown/" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Beach Yoga &amp; Pilates</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Sat 6 Jun, 10:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Backstrand, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="cat-section">
+  <div class="cat-strip">
+    <div class="cat-strip-left">
+      <div class="cat-bar"></div>
+      <span class="cat-name">Food &amp; Drink</span>
+    </div>
+    <span class="cat-count">2 events</span>
+  </div>
+  <div class="cat-cards">
+    <a href="https://www.eventbrite.ie/e/ravioli-workshop-at-don-gregorio-tickets-1989978366864" class="event-card" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Ravioli Workshop at Don Gregorio</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Tue 2 Jun, 18:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Don Gregorio, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+    <a href="https://www.eventbrite.ie/o/aye-cork-58009452463" class="event-card tint" target="_blank" rel="noopener">
+      <div class="event-main">
+        <p class="event-title">Cork City Riviera</p>
+        <div class="event-meta">
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Thu 4 Jun, 17:00
+        </span>
+        <span class="meta-chip">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Aye, Cork
+        </span>
+        </div>
+      </div>
+      <div class="event-actions">
+        <span class="more-link">Details
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </div>
+    </a>
+  </div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <p class="footer-brand">Safe<br>Harbour</p>
+        <p class="footer-tagline">Curated weekly to help you plan your week ahead in minutes.</p>
+        <a href="https://www.safeharbour.ie" class="footer-btn"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Subscribe free</a>
+      </div>
+      <div class="footer-stats">
+        <div class="stat-card"><p class="stat-num" style="font-size:48px;line-height:1">64</p><p class="stat-label">Events this week</p></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Safe Harbour. Updated weekly.</p>
+      <div class="footer-links">
+        <a href="https://events.safeharbourcork.ie/legal" target="_blank" rel="noopener">Privacy policy</a>
+        <a href="https://events.safeharbourcork.ie/legal" target="_blank" rel="noopener">Terms &amp; conditions</a>
+        <a href="https://www.safeharbour.ie">safeharbour.ie</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
